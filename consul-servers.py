@@ -3,6 +3,7 @@ import itertools
 import json
 import random
 
+
 def gen_test_case():
     result = list()
     for rack in range(random.randint(1, 5)):
@@ -15,7 +16,7 @@ def gen_test_case():
                     "name": name,
                     "rack": "rack_{}".format(rack)
                 })
-    
+
     return result
 
 
@@ -25,7 +26,6 @@ while True:
         rack = item['rack']
         by_rack.setdefault(rack, [])
         bisect.insort(by_rack[rack], item['name'])
-
 
     dms_number = random.randint(1, 4)
     metals_needed = 5 - dms_number
