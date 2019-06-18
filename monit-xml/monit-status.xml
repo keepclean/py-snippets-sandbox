@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monit>
+    <server>
+        <id>6d5c6865185503da44ece2502b9c0ca5</id>
+        <incarnation>1560858468</incarnation>
+        <version>5.20.0</version>
+        <uptime>13987</uptime>
+        <poll>60</poll>
+        <startdelay>0</startdelay>
+        <localhostname>94m8</localhostname>
+        <controlfile>/etc/monit/monitrc</controlfile>
+        <httpd>
+            <address>127.0.0.1</address>
+            <port>2812</port>
+            <ssl>0</ssl>
+        </httpd>
+    </server>
+    <platform>
+        <name>Linux</name>
+        <release>4.19.50-cloudflare-2019.6.4</release>
+        <version>#2019.6.4 SMP Wed Jun 12 10:05:48 UTC 2019</version>
+        <machine>x86_64</machine>
+        <cpu>32</cpu>
+        <memory>131915276</memory>
+        <swap>0</swap>
+    </platform>
+    <service type="7">
+        <name>Salt_Minion_Last_Highstate_Is_Too_Old</name>
+        <collected_sec>1560872454</collected_sec>
+        <collected_usec>833349</collected_usec>
+        <status>0</status>
+        <status_hint>0</status_hint>
+        <monitor>1</monitor>
+        <monitormode>0</monitormode>
+        <onreboot>0</onreboot>
+        <pendingaction>0</pendingaction>
+        <program>
+            <started>1560872454</started>
+            <status>0</status>
+            <output>
+                <![CDATA[Node is within threshold (7200) of 6049.0 seconds.]]>
+            </output>
+        </program>
+    </service>
+    <service type="5">
+        <name>94m8</name>
+        <collected_sec>1560872454</collected_sec>
+        <collected_usec>833350</collected_usec>
+        <status>0</status>
+        <status_hint>0</status_hint>
+        <monitor>1</monitor>
+        <monitormode>0</monitormode>
+        <onreboot>0</onreboot>
+        <pendingaction>0</pendingaction>
+        <system>
+            <load>
+                <avg01>25.14</avg01>
+                <avg05>27.56</avg05>
+                <avg15>28.16</avg15>
+            </load>
+            <cpu>
+                <user>48.8</user>
+                <system>8.5</system>
+                <wait>0.6</wait>
+            </cpu>
+            <memory>
+                <percent>32.9</percent>
+                <kilobyte>43417356</kilobyte>
+            </memory>
+            <swap>
+                <percent>0.0</percent>
+                <kilobyte>0</kilobyte>
+            </swap>
+        </system>
+    </service>
+</monit>
